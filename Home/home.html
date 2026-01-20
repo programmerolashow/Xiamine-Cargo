@@ -23,7 +23,7 @@
                     <li class="litag"><a href="contact.html" class="li">CONTACT</a></li>
                     <button class="sidebar-btn">
                         <img src="../images/unlock.svg" alt="unlock">
-                        <a href="premium.html">Unlock</a>
+                        <a href="premium.html">Sign Up</a>
                     </button>
                 </ul>
             </div>
@@ -38,7 +38,7 @@
             <div class="svg">
                 <button class="ul">
                     <img src="../images/unlock.svg" alt="unlock">
-                    <a href="premium.html">Unlock</a>
+                    <a href="premium.html">Sign Up</a>
                 </button>
                 <span>
                     <a href="#" onclick="showSideBar()" class="show"> 
@@ -117,8 +117,11 @@
                 <div class="texts">
                     <p class="big">Comfort Solution Of Cargo</p>
                     <p class="small">The overall supply chain is a network of business as well as most organizations working in a sequence of processes over including logistics to produce and distribute goods.</p>
-                    <div>
-                        <button><a href="About Us">About Us</a></button>
+                    <div class="text-button">
+                        <button>
+                            <a href="About Us">About Us</a>
+                            <img src="../images/arrow-circle.svg" alt="arrow-up">
+                        </button>
                     </div>
                 </div>
 
@@ -130,4 +133,189 @@
                 </div>
             </div>
         </div>
+
+        <!-- HUGE -->
+
+        <div class="container-2">
+            <div class="content">
+                <div class="containerImage">
+                    <div class="containerImage-Text">
+                        <h3>Latest Logistics Insights.</h3>
+                        <p>Utilize our efficient logistics and expensive network for seemless transportation of your goods to global destinations.</p>
+                        <div class="huge-button">
+                            <button><a href="#">View All</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Business -->
+
+        <div class="business">
+            <div class="business-head">
+                <h1>Useful for Business.</h1>
+                <p>Our technologies enhance business efficiency and driver saftey.</p>
+            </div>
+            <div class="business-card">
+                <div class="business-card1">
+                    <div class="business-inner">
+                        <div class="business-num">
+                            <h3>Time Saving</h3>
+                        </div>
+                        <div class="business-large">
+                            <h3>20%</h3> 
+                            <p>less mundanity.</p>
+                        </div>
+                        <p class="business-inner-p">Process automation frees you to focus on other tasks.</p>
+                    </div>
+                </div>
+                <div class="business-card1">
+                    <div class="business-inner">
+                        <div class="business-num">
+                            <h3>Saving</h3>
+                        </div>
+                        <div class="business-large">
+                            <h3>50%</h3> 
+                            <p>fewer accidents.</p>
+                        </div>
+                        <p class="business-inner-p">Analyzing driving behaviour improves road safety.</p>
+                    </div>
+                </div>
+                <div class="business-card1">
+                    <div class="business-inner">
+                        <div class="business-num">
+                            <h3>improving efficiency</h3>
+                        </div>
+                        <div class="business-large">
+                            <h3>30%</h3> 
+                            <p>reduction in fuel costs.</p>
+                        </div>
+                        <p class="business-inner-p">Route optimization saves up to a third on fuel.</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- REGISTER -->
+
+        <div class="register">
+            <div class="curve">
+                <div class="curve-upper">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319"><path fill="#f0f8ff" fill-opacity="1" d="M0,32L48,74.7C96,117,192,203,288,245.3C384,288,480,288,576,245.3C672,203,768,117,864,112C960,107,1056,181,1152,192C1248,203,1344,149,1392,122.7L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+                </div>
+
+                <h2>Fill The Form To Register Or Login</h2>
+                <div class="form-wrapper">
+                    <div class="containerForm">
+                        <form class="form" onsubmit="event.preventDefault();"> <div class="tabs-form">
+                                <button type="button" class="loginBtn active-btn" id="loginBtn" onclick="showLogin()">Login</button>
+                                <button type="button" class="registerBtn" id="registerBtn" onclick="showRegister()">Sign Up</button>
+                            </div>
+
+                            <!-- LOGIN FORM -->
+
+                            <div class="loginForm active" id="loginForm">
+                                <div class="input-group">
+                                    <label for="loginEmail">Email</label>
+                                    <input type="email" placeholder="you@email.com" id="loginEmail" />
+                                </div>
+                                <div class="input-group">
+                                    <label for="loginPassword">Password</label>
+                                    <input type="password" id="loginPassword" />
+                                </div>
+                                <button type="button" class="submit-btn" onclick="loginUser()">Login</button>
+                                <a href="#" class="forgot-password">Forgot your password</a>
+                            </div>
+
+                            <!-- REGISTER FORM -->
+
+                            <div class="registerForm" id="registerForm">
+                                <div class="input-group">
+                                    <label for="name">Full Name</label>
+                                    <input type="text" placeholder="John Doe" id="name" />
+                                </div>
+                                <div class="input-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" placeholder="you@email.com" id="email" />
+                                </div>
+                                <div class="input-group">
+                                    <label for="registerPhone">Phone Number</label>
+                                    <input type="tel" placeholder="+234-906-521-9168" id="registerPhone" />
+                                </div>
+                                <div class="input-group">
+                                    <label for="password">Password</label>
+                                    <input type="password" id="password" />
+                                </div>
+                                <div class="input-group">
+                                    <label for="confirmPassword">Confirm Password</label>
+                                    <input type="password" id="confirmPassword" />
+                                </div>
+                                <button type="button" class="submit-btn" onclick="registerUser()">Sign Up</button>
+                            </div>
+
+                            <div class="or">Or continue with</div>
+                            <div class="social">
+                                <div class="social-icon">G</div>
+                                <div class="social-icon">f</div>
+                                <div class="social-icon">T</div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="curve-bottom">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319"><path fill="#f0f8ff" fill-opacity="1" d="M0,256L48,218.7C96,181,192,107,288,112C384,117,480,203,576,208C672,213,768,139,864,117.3C960,96,1056,128,1152,128C1248,128,1344,96,1392,80L1440,64L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+                </div>
+            </div>
+        </div>  
+
+        <!-- FOOTER -->
+
+        <div class="footer">
+            <div class="wrap-footer">
+                <div class="foot1">
+                    <div class="icon">
+                        <div><img src="../images/lorry.svg" alt=""></div>
+                        <div class="p"><p>Xiamine Cargo</p></div>
+                    </div>
+                    <p>Get a customized shipping quote tailored to your needs. Fast, transperent, and hassle-free pricing for all logistics slolutions.</p>
+                </div>
+                <div class="foot2 foot">
+                    <p class="large-footer">Page</p>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="service.html">Service</a></li>
+                        <li><a href="about us.html">About us</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="foot3 foot">
+                    <div>
+                        <p class="large-footer">Courier Types</p>
+                    </div>
+                    <p>Standard</p>
+                    <p>Express</p>
+                    <p>International</p>
+                    <p>Ware housing</p>
+                    <p>Overnight</p>
+                    <p>Pailot</p>
+                </div>
+                <div class="foot4 foot">
+                    <p class="large-footer">Subscribe Our Newsletter</p>
+                    <div class="input">
+                        <div class="email"><input type="text" name="email" placeholder="Enter your email"></div>
+                        <div class="in-btn"><input type="button" value="Subscribe"></div>                        
+                    </div>
+                    <p class="no">(+234)906-5219-168 </p>
+                    <p class="no">www.xiamincargo.com.ng</p>
+                </div>
+            </div>
+            <div class="line4"></div>
+        </div>
     </div>
+    <script src="home.js"></script>
+</body>
+</html>

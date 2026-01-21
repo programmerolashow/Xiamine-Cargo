@@ -248,6 +248,7 @@ nav{
         row-gap: 20px;
     }
 }
+
 .button button{
     padding: 10px 25px;
     border: 2px solid #ff4500;
@@ -877,7 +878,6 @@ nav{
 .forgot-password:hover {
     color: #555;
 }
-
 
 .curve-bottom {
     background: #fff;

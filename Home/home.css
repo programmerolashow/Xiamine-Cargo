@@ -427,14 +427,29 @@ nav{
     animation: fade 9s ease-in-out infinite;
 }
 
-.img1 { background-image: url("../images/container2.jpg"); }
-.img2 { background-image: url("../images/container1.jpg"); }
-.img3 { background-image: url("../images/cargo.jpg"); }
+.img1 { 
+    background-image: url("../images/container2.jpg"); 
+}
 
+.img2 { 
+    background-image: url("../images/container1.jpg"); 
+}
 
-.container .img1 { animation-delay: 0s; }
-.container .img2 { animation-delay: 3s; }
-.container .img3 { animation-delay: 6s; }
+.img3 { 
+    background-image: url("../images/cargo.jpg"); 
+}
+
+.container .img1 { 
+    animation-delay: 0s; 
+}
+
+.container .img2 { 
+    animation-delay: 3s; 
+}
+
+.container .img3 { 
+    animation-delay: 6s; 
+}
 
 
 .overlay {

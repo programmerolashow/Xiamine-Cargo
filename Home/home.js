@@ -1,24 +1,19 @@
 function showLogin() {
-    // Buttons Styling
     document.getElementById('loginBtn').classList.add('active-btn');
     document.getElementById('registerBtn').classList.remove('active-btn');
 
-    // Content Display
     document.getElementById('loginForm').classList.add('active');
     document.getElementById('registerForm').classList.remove('active');
 }
 
 function showRegister() {
-    // Buttons Styling
     document.getElementById('registerBtn').classList.add('active-btn');
     document.getElementById('loginBtn').classList.remove('active-btn');
 
-    // Content Display
     document.getElementById('registerForm').classList.add('active');
     document.getElementById('loginForm').classList.remove('active');
 }
 
-// Login Validation
 function loginUser() {
     const email = document.getElementById('loginEmail').value;
     const password = document.getElementById('loginPassword').value;
@@ -37,7 +32,6 @@ function loginUser() {
     alert(`Welcome back! Login successful for ${email}`);
 }
 
-// Register Validation
 function registerUser() {
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;

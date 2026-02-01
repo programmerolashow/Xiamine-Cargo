@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="about.css">
     <link rel="icon" href="../images/icon-logo.svg">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <section>
@@ -146,7 +147,7 @@
 
     <!-- Team Section -->
     
-   <section class="team-section container">
+    <section class="team-section container">
         <div class="team-layout">
             <div class="team-content">
                 <h3 class="team-tag"><span class="dot"></span>OUR TEAMS</h3>
@@ -158,9 +159,9 @@
 
             <div class="team-list">
                 <article class="team-card">
-                    <img src="james.jpg" alt="James Riley" class="team-img">
+                    <img src="../images/Chung Mong-koo.jpg" alt="Chung Mong-koo" class="team-img">
                     <div class="team-info">
-                        <h3>James Riley</h3>
+                        <h3>Chung Mong-koo</h3>
                         <p>CEO &amp; Founder</p>
                     </div>
                 </article>
@@ -168,16 +169,192 @@
                 <hr class="team-divider">
 
                 <article class="team-card">
-                    <img src="emily.jpg" alt="Emily Tran" class="team-img">
+                    <img src="../images/my_dp.png" alt="My Image" class="team-img">
                     <div class="team-info">
-                        <h3>Emily Tran</h3>
+                        <h3>Illias Olanrewaju</h3>
                         <p>Chief Operations Officer</p>
                     </div>
                 </article>
-
             </div>
         </div>
     </section>
+
+    <!-- QUOTE SECTION -->
+
+    <section class="quote">
+        <div class="quote-content">
+            <div class="quote-image">
+                <img src="../images/import.jpg" alt="Cargo shipment">
+            </div>
+
+            <div class="quote-text">
+                <h1>Let Our Team Handle<br>your Cargo with Care</h1>
+                <p>Our experienced team ensures your cargo is handled with the utmost care, providing safe and timely delivery every step of the way.</p>
+
+                <a href="#" class="quote-btn">Get a Free Quote<span>→</span></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS SECTION -->
+
+    <section class="stats-section">
+        <div class="stats">
+            <div class="stat-card">
+                <h2>25</h2>
+                <p>Years of Industry<br>Experience</p>
+            </div>
+
+            <div class="stat-card">
+                <h2>99%</h2>
+                <p>On-Time Delivery<br>Rate</p>
+            </div>
+
+            <div class="stat-card">
+                <h2>500+</h2>
+                <p>Satisfied Clients<br>Worldwide</p>
+            </div>
+
+            <div class="stat-card">
+                <h2>300+</h2>
+                <p>Employees for Your<br>Success</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- REGISTER SECTION -->
+
+    <section class="auth-section">
+        <div class="auth-container">
+
+            <div class="auth-image">
+                <img src="../images/register4.png" alt="Register illustration">
+            </div>
+
+            <div class="auth-form">
+                <h2>Register or Login to get a Quote</h2>
+
+                <div class="form-wrapper">
+                    <div class="containerForm">
+                        <form class="form" onsubmit="event.preventDefault();">
+                            
+                            <div class="tabs-form">
+                            <button type="button" class="loginBtn active-btn" id="loginBtn" onclick="showLogin()">Login</button>
+                            <button type="button" class="registerBtn" id="registerBtn" onclick="showRegister()">Sign Up</button>
+                            </div>
+
+                            <!-- LOGIN FORM -->
+                            <div class="loginForm active" id="loginForm">
+                            <div class="input-group">
+                                <label for="loginEmail">Email</label>
+                                <input type="email" placeholder="you@email.com" id="loginEmail" />
+                            </div>
+
+                            <div class="input-group">
+                                <label for="loginPassword">Password</label>
+                                <input type="password" id="loginPassword" />
+                            </div>
+
+                            <button type="button" class="submit-btn" onclick="loginUser()">Login</button>
+                            <a href="#" class="forgot-password">Forgot your password</a>
+                            </div>
+
+                            <!-- REGISTER FORM -->
+                            <div class="registerForm" id="registerForm">
+                            <div class="input-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" placeholder="John Doe" id="name" />
+                            </div>
+
+                            <div class="input-group">
+                                <label for="email">Email</label>
+                                <input type="email" placeholder="you@email.com" id="email" />
+                            </div>
+
+                            <div class="input-group">
+                                <label for="registerPhone">Phone Number</label>
+                                <input type="tel" placeholder="+234-906-521-9168" id="registerPhone" />
+                            </div>
+
+                            <div class="input-group">
+                                <label for="password">Password</label>
+                                <input type="password" id="password" />
+                            </div>
+
+                            <div class="input-group">
+                                <label for="confirmPassword">Confirm Password</label>
+                                <input type="password" id="confirmPassword" />
+                            </div>
+
+                            <button type="button" class="submit-btn" onclick="registerUser()">Sign Up</button>
+                            </div>
+
+                            <div class="or">Or continue with</div>
+                            <div class="social">
+                                <div class="social-icon"><i class="fab fa-google"></i></div>
+                                <div class="social-icon"><i class="fab fa-facebook-f"></i></div>
+                                <div class="social-icon"><i class="fab fa-twitter"></i></div>
+
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- TESTIMONIALS SECTION -->
+
+    <section class="testimonial-section">
+        <div class="header-container">
+            <div class="title-group">
+                <span class="badge">TESTIMONIALS</span>
+                <h1>Trusted by Worldwide</h1>
+            </div>
+            <p class="description">Many companies already work with us. Praise pleases us, criticism helps us because we want to get better every day.</p>
+        </div>
+
+        <!-- Testimonial cards container -->
+        <div class="testimonial-cards">
+            <div class="testimonial-card active">
+                <div class="image-box">
+                    <img src="../images/jordan richie.jpg" alt="Jordan Richie">
+                </div>
+                <div class="content-box">
+                    <p class="location">Philadelphia, Pennsylvania</p>
+                    <h2 class="main-quote">"Their team went above and beyond to ensure our deliveries were on time, every time."</h2>
+                    <p class="sub-text">"The reliability and dedication of Xiamine Cargo have been essential to keeping our production line running smoothly. They provide real-time updates, quick responses, and solutions to every challenge we encounter."</p>
+                    <div class="author-info">
+                        <h3 class="name">Jordan Riche</h3>
+                        <p class="job-title">Manufacturer</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="image-box">
+                    <img src="../images/carman lander.jpg" alt="Carmen Lander">
+                </div>
+                <div class="content-box">
+                    <p class="location">Philadelphia, Pennsylvania</p>
+                    <h2 class="main-quote">“Allowing us to focus on growth Highly recommended!”</h2>
+                    <p class="sub-text">"Their seamless coordination and proactive communication have made a real difference in our operations. From customs clearance to last-mile delivery, they've handled every detail with expertise and care. We couldn't ask for a better logistics partner."</p>
+                    <div class="author-info">
+                        <h3 class="name">Carmen Lander</h3>
+                        <p class="job-title">Retailer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pagination">
+            <span class="pagination-dot active"></span>
+            <span class="pagination-dot"></span>
+        </div>
+    </section>
+
 
     <script src="about.js"></script>
 </body>

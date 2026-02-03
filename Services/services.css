@@ -5,88 +5,19 @@
 }
 
 .header {
-    background-image:linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.15)), url("../images/ship.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 90vh;
-    width: 100vw;
+    max-width: 1250px;
 }
-
-.header-top{
-    padding-top: 25px;
-}
-
-.header-description{
-    padding: 6rem 0 0 5rem;
-    max-width: 1000px;
-}
-
-.header-description h1{
-    padding-bottom: 5px;
-    font-size: 55px;
-    font-weight: bold;
-    color: #efefef;
-    text-shadow: 2px 2px 3px #444, 3px 3px 3px #000000;
-}
-
-.header-description p{
-    padding-bottom: 20px;
-    font-size: 20px;
-    font-weight: bolder;
-    color: #efefef;
-    text-shadow: 2px 2px 3px #444, 3px 3px 3px #000000;
-}
-
-.headerBtn{
-    display: flex;
-    column-gap: 20px;
-    padding: 10px 0px;
-
-    @media (width <= 500px) {
-        display: block;
-        row-gap: 20px;
-    }
-}
-
-.headerBtn button{
-    padding: 20px 25px;
-    background-color: #fff;
-    border-radius: 50px;
-    border-style: none;
-    width: 200px;
-    transition: all;
-    transition-duration: 0.4s;
-    transition-timing-function: ease-out;
-    transition-delay: 0s;
-
-    @media (width <= 500px) {
-        margin-bottom: 15px;
-    }
-}
-
-.headerBtn button:hover{
-    width: 170px;
-}
-
-.headerBtn a{
-    font-size: 17px;
-    color: #252525;
-    font-weight: bold;
-    text-decoration: none;
-}
-
 
 nav{
     display: flex;
-    width: 90%;
+    width: 99%;
     margin: auto;
     border: 1px solid #000;
     border-radius: 50px;
     justify-content: space-between;
     align-items: center;
     padding: 1.5px 3px;
-    margin-top: 2.5px;
+    margin: 3px 10px;
     background-color: #f0f8ff;
 }
 
@@ -267,6 +198,63 @@ nav{
     display: none;
 }
 
+.header-description {
+    width: 1200px;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    margin: 10px 13px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.45)), url("../images/ship.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #efefef;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3)
+}
+
+.header-description h1 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
+
+/* Hero paragraph */
+.header-description p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    max-width: 800px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
+
+.headerBtn {
+    display: flex;
+    column-gap: 20px;
+}
+
+.headerBtn button {
+    padding: 15px 30px;
+    background-color: #fff;
+    color: #252525;
+    font-weight: bold;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.headerBtn button:hover {
+    background-color: #ddd;
+}
+
+.headerBtn a {
+    text-decoration: none;
+    color: inherit;
+}
 /* PARTNERS */
 
 .partners {

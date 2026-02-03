@@ -216,7 +216,7 @@ nav{
 .overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, #0037a6 0%, rgba(0, 55, 166, 0.95) 40%, rgba(0, 55, 166, 0.6) 65%, rgba(0, 55, 166, 0.2) 100%);
+  background: linear-gradient(90deg, #0e0e0e 0%, rgba(0, 0, 0, 0.95) 40%, rgba(0, 0, 0, 0.6) 65%, rgba(0, 0, 0, 0.2) 100%);
 }
 
 .content {
@@ -234,14 +234,13 @@ nav{
 .badge {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 0;
   margin-bottom: 20px;
 }
 
 .badge span {
   width: 10px;
   height: 10px;
-  background: #ff3b3b;
   border-radius: 50%;
 }
 
@@ -249,13 +248,20 @@ nav{
   font-size: 12px;
   letter-spacing: 1px;
   font-weight: 600;
+  color: #f5f5f5;
 }
 
 .content h1 {
   font-size: 52px;
   margin-bottom: 16px;
   color: #f5f5f5;
-  text-shadow: 2px 2px 3px #cccccc, 3px 3px 4px #4e4e4f, 3px 3px 4px #000000;
+  text-shadow: 2px 2px 3px #1c1b1b, 3px 3px 4px #4e4e4f, 3px 3px 4px #000000;
+}
+
+.content p {
+  color: #f7f7f7;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 .description {
@@ -413,6 +419,9 @@ nav{
 .gallery-titles { 
     flex: 1; 
 }
+.gallery-titles h1 {
+  color: #000;
+}
 
 .label{
     margin-bottom: 20px;
@@ -430,7 +439,7 @@ nav{
 .main-title {
     font-size: 50px;
     font-weight: 400;
-    color: #003399;
+    color: #000;
 }
 
 .gallery-desc { 
@@ -570,7 +579,7 @@ nav{
     align-items: center;
     gap: 8px;
     font-size: 14px;
-    color: #0037a5;
+    color: #333;
     font-weight: 600;
     margin-bottom: 15px;
 }
@@ -644,7 +653,7 @@ nav{
 }
 
 .quote-content {
-  background:linear-gradient(rgba(0, 55, 166, 0.9), rgba(0, 55, 166, 0.9)), url("../images/earth.jpg");
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.35)), url("../images/earth.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -746,7 +755,7 @@ nav{
 }
 
 .stat-card {
-  border: 1px solid #c9d6ff;
+  border: 1px solid #111;
   border-radius: 18px;
   padding: 40px 20px;
   text-align: center;
@@ -785,7 +794,7 @@ nav{
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #003399;
+  background: linear-gradient(to right, #031d53, #111);
   margin: 20px auto;
   padding: 40px;
   border-radius: 20px;
@@ -1010,8 +1019,9 @@ nav{
 }
 
 .badge {
-  color: #666;
+  color: #222;
   font-size: 14px;
+  font-weight: 600;
   letter-spacing: 1px;
   display: flex;
   align-items: center;
@@ -1028,7 +1038,7 @@ nav{
 }
 
 .title-group h1 {
-  color: #0038a8;
+  color: #111;
   font-size: 48px;
   margin-top: 15px;
 }
@@ -1087,7 +1097,7 @@ nav{
 }
 
 .main-quote {
-  color: #0038a8;
+  color: #222;
   font-size: 32px;
   line-height: 1.2;
   margin-bottom: 30px;
